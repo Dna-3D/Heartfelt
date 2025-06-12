@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heartland Homes - FUTO Student Lodges</title>
+    <meta name="description" content="Find your perfect lodge at FUTO" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">
+          <img src="./img.jpg" 
+               alt="Heartland Homes Logo" class="logo-img">
+          <span class="logo-text">HH</span>
+        </a>
+        
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#home" class="nav-link active" data-page="home">Home</a>
+            <a href="#lodges" class="nav-link" data-page="lodges">Lodges</a>
+            <a href="#about" class="nav-link" data-page="about">About</a>
+          </div>
+          
+          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode">
+            <span class="theme-icon">🌙</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Find Your Perfect
+            <span class="hero-accent">Lodge at FUTO</span>
+            <span class="hero-accent">With Heartland Homes</span>
+          </h1>
+          
+          <p class="hero-description">
+            Discover comfortable and affordable lodges near Federal University of Technology, Owerri. 
+            From Umuchima to Eziobodo, find your home away from home.
+          </p>
+          
+          <div class="hero-buttons">
+            <button class="btn-primary" onclick="showPage('lodges')">Browse Lodges</button>
+            <button class="btn-secondary" onclick="showPage('about')">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Lodges -->
+      <section class="featured-section">
+        <div class="container">
+          <h2 class="section-title">Featured Lodges</h2>
+          
+          <div class="lodge-grid">
+            <div class="lodge-card">
+              <div class="lodge-image">
+                <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop" alt="Cozy Studio">
+                <div class="price-tag">₦80,000/year</div>
+              </div>
+              <div class="lodge-content">
+                <h3 class="lodge-title">Cozy Studio in Umuchima</h3>
+                <p class="lodge-description">A well-furnished studio apartment with modern amenities. Perfect for students who value comfort and convenience.</p>
+                <button class="whatsapp-btn" onclick="contactWhatsApp('Cozy Studio in Umuchima', '₦80,000/year')">Contact on WhatsApp</button>
+              </div>
+            </div>
+
+            <div class="lodge-card">
+              <div class="lodge-image">
+                <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" alt="Shared Lodge">
+                <div class="price-tag">₦60,000/year</div>
+              </div>
+              <div class="lodge-content">
+                <h3 class="lodge-title">Shared Lodge in Amausa</h3>
+                <p class="lodge-description">Affordable shared accommodation in the heart of Amausa. Great for budget-conscious students.</p>
+                <button class="whatsapp-btn" onclick="contactWhatsApp('Shared Lodge in Amausa', '₦60,000/year')">Contact on WhatsApp</button>
+              </div>
+            </div>
+
+            <div class="lodge-card">
+              <div class="lodge-image">
+                <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop" alt="Modern Apartment">
+                <div class="price-tag">₦100,000/year</div>
+              </div>
+              <div class="lodge-content">
+                <h3 class="lodge-title">Modern Apartment Near Backgate</h3>
+                <p class="lodge-description">Spacious and modern apartment just minutes from the university backgate.</p>
+                <button class="whatsapp-btn" onclick="contactWhatsApp('Modern Apartment Near Backgate', '₦100,000/year')">Contact on WhatsApp</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <h3 class="footer-title">Heartland Homes</h3>
+          <p class="footer-description">Your trusted partner for FUTO student accommodation</p>
+          <p class="footer-contact">Contact us: 08082610560, 09017665262</p>
+          <p class="footer-description">Created by Darc designs</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Lodges Page -->
+    <div id="lodges" class="page">
+      <div class="page-content">
+        <div class="container">
+          <div class="page-header">
+            <h1 class="page-title">Available Lodges</h1>
+            <p class="page-subtitle">Explore our carefully selected lodges in four prime locations around FUTO campus.</p>
+          </div>
+
+          <!-- Umuchima Section -->
+          <section class="lodge-section">
+            <h2 class="section-title">Umuchima Lodges</h2>
+            <div class="lodge-grid">
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop" alt="Executive Lodge">
+                  <div class="price-tag">₦120,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Executive Lodge Umuchima</h3>
+                  <p class="lodge-description">Luxurious lodge with all modern amenities including air conditioning, private bathroom, kitchen, and 24/7 power supply.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Executive Lodge Umuchima', '₦120,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" alt="Student Haven">
+                  <div class="price-tag">₦80,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Student Haven Umuchima</h3>
+                  <p class="lodge-description">Comfortable and affordable accommodation perfect for students. Features shared facilities, study areas, reliable internet.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Student Haven Umuchima', '₦80,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop" alt="Cozy Corner">
+                  <div class="price-tag">₦70,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Cozy Corner Umuchima</h3>
+                  <p class="lodge-description">A budget-friendly option with all essential amenities. Perfect for first-year students with shared kitchen and common room.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Cozy Corner Umuchima', '₦70,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Amausa Section -->
+          <section class="lodge-section">
+            <h2 class="section-title">Amausa Lodges</h2>
+            <div class="lodge-grid">
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop" alt="Amausa Deluxe">
+                  <div class="price-tag">₦90,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Amausa Deluxe</h3>
+                  <p class="lodge-description">Modern lodge in Amausa with excellent security, reliable power, water supply, and internet.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Amausa Deluxe', '₦90,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" alt="Unity Lodge">
+                  <div class="price-tag">₦65,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Unity Lodge Amausa</h3>
+                  <p class="lodge-description">Shared accommodation fostering unity among students. Features common areas for study and recreation.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Unity Lodge Amausa', '₦65,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop" alt="Green Valley">
+                  <div class="price-tag">₦75,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Green Valley Amausa</h3>
+                  <p class="lodge-description">Peaceful lodge surrounded by greenery. Offers a serene environment for studies with reliable utilities.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Green Valley Amausa', '₦75,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Backgate Section -->
+          <section class="lodge-section">
+            <h2 class="section-title">Backgate Lodges</h2>
+            <div class="lodge-grid">
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop" alt="Backgate Premium">
+                  <div class="price-tag">₦110,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Backgate Premium</h3>
+                  <p class="lodge-description">Premium accommodation just minutes from the university backgate. Features private rooms, modern furnishing.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Backgate Premium', '₦110,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" alt="Campus View">
+                  <div class="price-tag">₦85,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Campus View Backgate</h3>
+                  <p class="lodge-description">Strategic location with easy access to campus. Offers comfortable living with shared amenities and study spaces.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Campus View Backgate', '₦85,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop" alt="Gateway Lodge">
+                  <div class="price-tag">₦95,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Gateway Lodge</h3>
+                  <p class="lodge-description">Well-maintained lodge with modern facilities. Perfect for students who want to be close to campus.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Gateway Lodge', '₦95,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Eziobodo Section -->
+          <section class="lodge-section">
+            <h2 class="section-title">Eziobodo Lodges</h2>
+            <div class="lodge-grid">
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=400&h=300&fit=crop" alt="Eziobodo Palace">
+                  <div class="price-tag">₦100,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Eziobodo Palace</h3>
+                  <p class="lodge-description">Spacious and well-designed lodge in the quiet area of Eziobodo. Features include private bathroom and kitchen.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Eziobodo Palace', '₦100,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop" alt="Serene Homes">
+                  <div class="price-tag">₦70,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Serene Homes Eziobodo</h3>
+                  <p class="lodge-description">Affordable and comfortable accommodation in a peaceful neighborhood. Perfect for students who prefer quiet environment.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Serene Homes Eziobodo', '₦70,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+
+              <div class="lodge-card">
+                <div class="lodge-image">
+                  <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop" alt="Royal Court">
+                  <div class="price-tag">₦80,000/year</div>
+                </div>
+                <div class="lodge-content">
+                  <h3 class="lodge-title">Royal Court Eziobodo</h3>
+                  <p class="lodge-description">Well-maintained lodge with excellent facilities. Features shared common areas and reliable utilities.</p>
+                  <button class="whatsapp-btn" onclick="contactWhatsApp('Royal Court Eziobodo', '₦80,000/year')">Contact on WhatsApp</button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <h3 class="footer-title">Heartland Homes</h3>
+          <p class="footer-description">Your trusted partner for FUTO student accommodation</p>
+          <p class="footer-contact">Contact us: 08082610560, 09017665262</p>
+          <p class="footer-description">Created by Darc designs</p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+      <div class="page-content">
+        <div class="container">
+          <div class="page-header">
+            <h1 class="page-title">About Heartland Homes</h1>
+            <p class="page-subtitle">Your trusted partner for student accommodation at FUTO</p>
+          </div>
+
+          <div class="about-content">
+            <div class="about-section">
+              <div class="about-text">
+                <h2 class="about-title">Our Mission</h2>
+                <p class="about-description">
+                  At Heartland Homes, we understand that finding the right accommodation is crucial for every student's success. 
+                  We are dedicated to connecting FUTO students with safe, comfortable, and affordable lodges in prime locations around the campus.
+                </p>
+                <p class="about-description">
+                  Our platform makes it easy to discover lodges in Umuchima, Amausa, Backgate, and Eziobodo, 
+                  ensuring you find a place that feels like home while you pursue your academic goals.
+                </p>
+              </div>
+              <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&h=400&fit=crop" alt="Campus environment">
+              </div>
+            </div>
+
+            <div class="features-section">
+              <h2 class="section-title">Why Choose Heartland Homes?</h2>
+              <div class="features-grid">
+                <div class="feature-card">
+                  <div class="feature-icon">🏠</div>
+                  <h3 class="feature-title">Quality Lodges</h3>
+                  <p class="feature-description">Carefully vetted accommodations with essential amenities for comfortable student living.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">📍</div>
+                  <h3 class="feature-title">Prime Locations</h3>
+                  <p class="feature-description">Strategic locations in Umuchima, Amausa, Backgate, and Eziobodo for easy campus access.</p>
+                </div>
+                <div class="feature-card">
+                  <div class="feature-icon">💬</div>
+                  <h3 class="feature-title">Easy Contact</h3>
+                  <p class="feature-description">Direct WhatsApp contact with lodge owners for quick and convenient communication.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-section">
+              <h2 class="section-title">Ready to Find Your Perfect Lodge?</h2>
+              <p class="contact-description">Contact us today and let us help you find the ideal accommodation for your FUTO journey.</p>
+              <div class="contact-info">
+                <p class="contact-number">WhatsApp: 08082610560, 09017665262</p>
+                <p class="contact-availability">Available 24/7 to assist you</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+          <h3 class="footer-title">Heartland Homes</h3>
+          <p class="footer-description">Your trusted partner for FUTO student accommodation</p>
+          <p class="footer-contact">Contact us: 08082610560, 09017665262</p>
+          <p class="footer-description">Created by Darc designs</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
