@@ -32,7 +32,7 @@ function showPage(pageId) {
 
 // WhatsApp contact functionality
 function contactWhatsApp(lodgeName, price) {
-  const phoneNumber = '08082610560';
+  const phoneNumber = '2349017665262';
   const message = encodeURIComponent(`Hi! I'm interested in the ${lodgeName} lodge listed for ${price}. Can you provide more details?`);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(whatsappUrl, '_blank');
